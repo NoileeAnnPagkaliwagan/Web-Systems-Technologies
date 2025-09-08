@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bethel University Header</title>
+<style>
+  /* Reset some default styles */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Top bar */
+  .top-bar {
+    background-color: #0D2C66; /* Dark blue similar to brand */
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 20px;
+    gap: 20px;
+  }
+  .top-bar a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .top-bar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Navigation menu container */
+  .nav-container {
+    background-color: #1853C3; /* Medium blue */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Left side: Logo and main nav */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  /* Logo area */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+  }
+  .logo svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+  }
+
+  /* Main navigation menu */
+  .main-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+  }
+  .main-nav li {
+    font-weight: 600;
+  }
+  .main-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .main-nav li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Right side menu */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-weight: 600;
+  }
+  .nav-right a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .nav-right a:hover {
+    text-decoration: underline;
+  }
+  .nav-right .search-icon {
+    cursor: pointer;
+  }
+
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .top-bar {
+      justify-content: center;
+      gap: 15px;
+      font-size: 12px;
+    }
+
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .nav-left {
+      gap: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .main-nav {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-right {
+      width: 100%;
+      justify-content: flex-start;
+      gap: 20px;
+      font-size: 14px;
+      padding-bottom: 8px;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <!-- Top utility links -->
+  <div class="top-bar" aria-label="Utility navigation">
+    <a href="#" tabindex="0">MyBethel</a>
+    <span>|</span>
+    <a href="#" tabindex="0">Offices</a>
+    <a href="#" tabindex="0">News</a>
+    <a href="#" tabindex="0">Events</a>
+    <a href="#" tabindex="0">Blog</a>
+  </div>
+
+  <!-- Main navigation -->
+  <nav class="nav-container" aria-label="Primary navigation">
+    <div class="nav-left">
+      <a href="#" class="logo" aria-label="Bethel University Home">
+        <!-- Simple shield icon representing Bethel -->
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 64 64" >
+          <path d="M32 2L6 14v18c0 18 10 24 26 28 16-4 26-10 26-28V14L32 2z"/>
+          <path d="M32 58c-10-3-16-6-16-22V20l16-8 16 8v16c0 16-6 19-16 22z" fill="#1853C3"/>
+          <path d="M22 34h20v6H22z" fill="#fff"/>
+          <path d="M30 26h4v16h-4z" fill="#fff"/>
+        </svg>
+        BETHEL<br/>UNIVERSITY
+      </a>
+      <ul class="main-nav" role="menubar">
+        <li role="none"><a href="#" role="menuitem" tabindex="0">About</a></li>
+        <li role="none"><a href="#" role="menuitem" tabindex="0">Admissions &amp; Aid</a></li>
+        <li role="none"><a href="#" role="menuitem" tabindex="0">Academics</a></li>
+        <li role="none"><a href="#" role="menuitem" tabindex="0">Student Life</a></li>
+        <li role="none"><a href="#" role="menuitem" tabindex="0">Athletics</a></li>
+        <li role="none"><a href="#" role="menuitem" tabindex="0">Faith</a></li>
+      </ul>
+    </div>
+    <div class="nav-right" role="menubar" aria-label="Secondary navigation">
+      <a href="#" role="menuitem" tabindex="0">Apply</a>
+      <a href="#" role="menuitem" tabindex="0">Visit</a>
+      <a href="#" role="menuitem" tabindex="0">Give</a>
+      <a href="#" role="menuitem" tabindex="0" class="search-icon" aria-label="Search">
+        <!-- Magnifying glass SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="white" viewBox="0 0 24 24">
+          <path d="M10 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm8.707 15.293-4.829-4.829a6 6 0 1 0-1.414 1.414l4.829 4.829a1 1 0 0 0 1.414-1.414z"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+</body>
+</html>
+
+  <h2>Anatomy of a Webpage</h2>
+
+  <p>There are lots of pieces to think about when creating a webpage. 
+     Here’s a quick guide to the most basic elements.</p>
+  <h2>1. Page Title</h2>
+  <ul>
+    <li>Keep it short. Use clear language.</li>
+    <li>Make the first two words count.</li>
+    <li>Avoid internal jargon or acronyms.</li>
+  </ul>
+
+  <h2>2. ID</h2>
+  <p>The ID is a label assigned to the webpage that will appear at the end of the URL.</p>
+  <ul>
+    <li>Use hyphens between words.</li>
+    <li>Never use underscores or other characters.</li>
+    <li>No capital letters.</li>
+    <li>Use words that make sense.</li>
+    <li>Don’t use obscure acronyms or abbreviations.</li>
+  </ul>
+
+  <h2>3.Description</h2>
+  <p>The description is a one-sentence summary of your page. It’s important to use key words and phrases that you think visitors might be using as search terms.</p>
+  <ul>
+    <p></p>
+    <li>Google search results page</li>
+    <li>Facebook, comments threads, or any other website where someone might post a link to your page</li>  
+  </ul>
+
+  <h2>4.Body</h2>
+  <p>The body is the bulk of your webpage content. It’s the information you’re providing to help visitors complete their tasks.</p>
+  <ul>
+    <p>
+    <li>Put your informFacebook, comments threads, or any other website where someone might post a link to your pageation in priority order with the most important information first.</li>
+    <li>Use short words, sentences, and paragraphs.
+      Think about your user first. What is the information that they want to know?</li>
+    <li>Are you using language that your users understand?</li>
+    <li>Never use all caps unless it's a predefined style you cannot control. Use bold instead if you're wanting to convey emphasis.</li> 
+  </ul>
+
+  <h2>5.Headings</h2>
+  <p>Headings help users scan and find information quickly so they can assess if they're in the right place.</p>
+  <ul>
+    <p>
+    <li>Accurately describe the information in the section</li>
+    <li>Be clear and concrete.</li>
+    <li>Use key terms or phrases that are relevant for users.</li>
+    <li>Use powerful and active words.</li>
+    <p>When formatting your headings, use H2 for main headings and H3 for subheadings. Re-evaluate your content if you're needing H4 because your page can get messy in a hurry.</p>
+  </ul>
+
+   <h2>6.Lists</h2>
+  <p>A list is a helpful tool for breaking down huge paragraphs or providing step-by-step instructions.</p>
+  <ul>
+    <p>
+    <li>Start with a capital letter.</li>
+    <li>Place a period at the end of complete sentences.</li>
+    <li>Use parallel language for list items (all fragments, all complete sentences, all questions, etc.).</li>
+    <li>Use numbers if you’re outlining a process or concrete steps that a visitor needs to take.</li>
+    <li>Visitors usually only see the first 2 words for each list item, so make those first 2 words meaningful.</li>
+  </ul>
+
+  <h2>6.Bold, Italics, and Underline</h2>
+  <p>On the web, bold, italics, and underline each have a unique purpose.</p>
+  <ul>
+    <h3>Bold</h3>
+    <p>Use bold for highlighting important info, such as an application deadline or fee. You can also use bold for key introductory phrases of bulleted lists.</p>
+    <p>Words of advice: if bold is overused, it’s no longer helpful. When too much is emphasized nothing stands out.</p>
+
+    <h3>Italics</h3>
+    <p>Use italics according to the  Bethel Style Guide:  </p>
+
+    <li>Book title<li>
+    <li>Movie titles<li>
+    <li>Titles of newspapers or publications<li>
+    <li>Other items as noted in the style guide<li>
+        
+    <p>Italics can also be used to consistently format a repeated piece of minor information.</p>
+
+   <p>Examples:</p>
+
+   <li>Room locations on secdule of events for a conference</li>
+   <li>Job titles on a staff list</li>
+    
+    <h3>Underline</h3>
+
+    <p>Never underline text on the web. Visitors will mistake underlined text for a link. This leads to confusion and reduces the impact of what you were trying to highlight. Use bold for emphasis instead.</p>
+
+  </ul>
+
+  <h2>7.Lists</h2>
+  <p>A list is a helpful tool for breaking down huge paragraphs or providing step-by-step instructions.</p>
+  <ul>
+    <p>
+    <li>Start with a capital letter.</li>
+    <li>Place a period at the end of complete sentences.</li>
+    <li>Use parallel language for list items (all fragments, all complete sentences, all questions, etc.).</li>
+    <li>Use numbers if you’re outlining a process or concrete steps that a visitor needs to take.</li>
+    <li>Visitors usually only see the first 2 words for each list item, so make those first 2 words meaningful.</li>
+  </ul>
+
+  <h2>8. Links</h2>
+  <p>Hyperlink meaningful phrases rather than single words or words that lack context.</p>
+  <ul>
+    <p>
+    <li>Phrases are easier to spot.</li>
+    <li>Meaningful words help search engines scan and pick up useful information.</li>
+    <li>Avoid using "here" and "click here."</li>
+    <p>Alert visitors when links will lead them to a document instead of a webpage by adding the appropriate tag at the end of the link:</p>
+    <li>Bethel Undergraduate Catalog (pdf)</li>
+    <li>Bethel Style Guide (doc)</li>
+    <li>Bethel Expense Report (xls)</li>
+  </ul>
+
+  <h2>9.Call to Action</h2>
+
+  <p>Hyperlink meaningful phrases rather than single words or words that lack context.</p>
+  <spaces> </spaces>
+  <p>It’s helpful to always give visitors a place to go from each webpage that’s related to the task at hand.</p>
+  
+
+
+  <!-- FOOTER -->
+<footer style="background: #0b1b61; color: white; padding: 40px 20px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+    <!-- Left Section -->
+    <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+      <h2 style="margin-bottom: 10px;">Bethel University</h2>
+      <p>3900 Bethel Drive<br>St. Paul, MN 55112</p>
+      <p><a href="#" style="color: #4da6ff; text-decoration: none;">Maps & Directions</a></p>
+      <p><a href="tel:6516386400" style="color: #4da6ff; text-decoration: none;">651.638.6400</a></p>
+      <!-- Social Icons (replace with Font Awesome if available) -->
+      <div style="margin-top: 10px;">
+        <a href="#" style="color:white; margin-right:10px;">📘</a>
+        <a href="#" style="color:white; margin-right:10px;">🐦</a>
+        <a href="#" style="color:white; margin-right:10px;">▶️</a>
+        <a href="#" style="color:white; margin-right:10px;">📸</a>
+        <a href="#" style="color:white; margin-right:10px;">💼</a>
+      </div>
+    </div>
+
+    <!-- Middle Section -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3>Information For</h3>
+      <ul style="list-style: none; padding: 0; line-height: 1.8;">
+        <li><a href="#" style="color:#fff; text-decoration:none;">Prospective Students</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Current Students</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Alumni</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Parents & Families</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Faculty & Staff</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Churches</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Military</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Section -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3>Resources</h3>
+      <ul style="list-style: none; padding: 0; line-height: 1.8;">
+        <li><a href="#" style="color:#fff; text-decoration:none;">Jobs at Bethel</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Calendar</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Library</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Questions & Comments</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Title IX Concerns</a></li>
+        <li><a href="#" style="color:#fff; text-decoration:none;">Course Catalogs</a></li>
+      </ul>
+      <button style="margin-top:10px; padding:10px 15px; border:none; border-radius:8px; background:#2563eb; color:white; cursor:pointer;">Support Bethel</button>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div style="max-width: 1200px; margin: auto; text-align: center; border-top: 1px solid #334; padding-top: 15px; margin-top: 20px; font-size: 14px; color: #ccc;">
+    © 2025 Bethel University | <a href="#" style="color:#4da6ff;">CA Student Disclosures</a> | <a href="#" style="color:#4da6ff;">Privacy Policy</a>
+    <br>
+    <p style="margin-top:10px; font-size:12px; color:#bbb;">
+      Bethel University’s Christ-centered mission includes a commitment to equal educational opportunity...
+    </p>
+  </div>
+</footer>
+
